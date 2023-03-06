@@ -10,7 +10,7 @@ fun CountriesQuery.Country.toCountry(): Country {
         code = code,
         name = name,
         emoji = emoji,
-        capital = capital ?: "No capital",
+        capitol = capital ?: "No capitol",
     )
 }
 
@@ -19,7 +19,7 @@ fun CountryQuery.Country.toCountryDetail(): CountryDetail {
         code = code,
         name = name,
         emoji = emoji,
-        capital = capital ?: "No capital",
+        capitol = capital ?: "No capitol",
         currency = currency ?: "No currency",
         languages = languages.mapNotNull { it.name },
         continent = continent.name

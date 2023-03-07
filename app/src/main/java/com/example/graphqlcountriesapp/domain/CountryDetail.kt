@@ -8,6 +8,5 @@ data class CountryDetail (
     val currency: String,
     val languages: List<String>,
     val continent: String
-) {
-}
+)
 

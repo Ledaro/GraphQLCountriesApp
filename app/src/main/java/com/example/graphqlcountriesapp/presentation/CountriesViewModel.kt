@@ -1,4 +1,4 @@
-package com.example.graphqlcountriesapp.ui
+package com.example.graphqlcountriesapp.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

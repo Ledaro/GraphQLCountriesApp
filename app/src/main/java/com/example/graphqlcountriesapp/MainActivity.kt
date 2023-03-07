@@ -6,8 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.graphqlcountriesapp.ui.CountriesScreen
-import com.example.graphqlcountriesapp.ui.CountriesViewModel
+import com.example.graphqlcountriesapp.presentation.CountriesScreen
+import com.example.graphqlcountriesapp.presentation.CountriesViewModel
 import com.example.graphqlcountriesapp.ui.theme.GraphQLCountriesAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     state = state,
                     onSelectCountry =
                     viewModel::selectCountry,
-                    onDismissCountryDialog = {}
+                    onDismissCountryDialog = viewModel::dismissCountryDialog
                 )
             }
         }
